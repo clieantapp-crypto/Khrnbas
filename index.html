@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>خدمة دفع فواتير الكهرباء - السعودية</title>
+
+    <!-- سياسات ملفات الكوكيز لجوجل -->
+    <script>
+      // مثال لإعلان قبول الكوكيز
+      function acceptCookies() {
+        document.getElementById('cookie-banner').style.display = 'none';
+        document.cookie =
+          'cookies_accepted=true; path=/; max-age=' + 60 * 60 * 24 * 365;
+      }
+      function checkCookie() {
+        if (document.cookie.indexOf('cookies_accepted=true') === -1) {
+          document.getElementById('cookie-banner').style.display = 'block';
+        }
+      }
+      window.onload = checkCookie;
+    </script>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        direction: rtl;
+        margin: 0;
+        padding: 0;
+      }
+      header,
+      footer {
+        background: #004aad;
+        color: #fff;
+        padding: 15px;
+        text-align: center;
+      }
+      main {
+        padding: 20px;
+      }
+      .form-group {
+        margin-bottom: 15px;
+      }
+      label {
+        display: block;
+        margin-bottom: 5px;
+      }
+      input[type='text'],
+      input[type='number'] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+      }
+      button {
+        background: #008000;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+      }
+      button:hover {
+        background: #005f00;
+      }
+      #cookie-banner {
+        display: none;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background: #222;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+      }
+      #cookie-banner button {
+        background: #f1c40f;
+        color: #000;
+        margin-left: 10px;
+      }
+      nav a {
+        margin: 0 10px;
+        color: white;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>خدمة دفع فواتير الكهرباء في السعودية</h1>
+      <nav>
+        <a href="#pay">الدفع</a>
+        <a href="#terms">الشروط والأحكام</a>
+        <a href="#privacy">سياسة الخصوصية</a>
+        <a href="#cookies">سياسة الكوكيز</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- نموذج الدفع -->
+      <section id="pay">
+        <h2>دفع فاتورة الكهرباء</h2>
+        <form action="/process_payment" method="POST">
+          <div class="form-group">
+            <label for="account">رقم الحساب:</label>
+            <input
+              type="text"
+              id="account"
+              name="account"
+              placeholder="أدخل رقم الحساب"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="amount">المبلغ (ريال سعودي):</label>
+            <input
+              type="number"
+              id="amount"
+              name="amount"
+              placeholder="أدخل المبلغ المراد دفعه"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="name">اسم صاحب الحساب:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="أدخل الاسم الكامل"
+              required
+            />
+          </div>
+
+          <button type="submit">ادفع الآن</button>
+        </form>
+      </section>
+
+      <!-- الشروط والأحكام -->
+      <section id="terms">
+        <h2>الشروط والأحكام</h2>
+        <p>
+          1. باستخدام هذه الخدمة، توافق على الالتزام بكافة القوانين والأنظمة
+          المعمول بها في المملكة العربية السعودية.
+        </p>
+        <p>
+          2. يتم استخدام بياناتك الشخصية لغرض إتمام عملية الدفع فقط ولا يتم
+          مشاركتها مع أطراف ثالثة إلا بموافقتك أو بناءً على القانون.
+        </p>
+        <p>3. الشركة غير مسؤولة عن أي خطأ في إدخال البيانات من قبل المستخدم.</p>
+        <p>
+          4. يحتفظ مزود الخدمة بحق تعديل الشروط في أي وقت مع نشر التعديلات هنا.
+        </p>
+      </section>
+
+      <!-- سياسة الخصوصية -->
+      <section id="privacy">
+        <h2>سياسة الخصوصية</h2>
+        <p>
+          نحن نحترم خصوصيتك. يتم جمع البيانات الأساسية فقط (رقم الحساب، الاسم،
+          المبلغ) لغرض تنفيذ الدفع.
+        </p>
+        <p>
+          يتم تخزين البيانات بشكل مشفر ولا يتم مشاركتها مع أي جهة خارجية إلا
+          بمقتضى القانون أو بموافقتك الصريحة.
+        </p>
+        <p>
+          يتم استخدام ملفات الكوكيز لتحسين تجربتك على الموقع، وتحليل الاستخدام
+          من خلال أدوات تحليلية (مثل Google Analytics).
+        </p>
+        <p>
+          لمزيد من التفاصيل، يمكنك التواصل مع فريق الدعم عبر البريد الإلكتروني.
+        </p>
+      </section>
+
+      <!-- سياسة الكوكيز -->
+      <section id="cookies">
+        <h2>سياسة الكوكيز</h2>
+        <p>
+          ملفات الكوكيز هي ملفات نصية صغيرة تُخزن على جهازك لتحسين أداء الموقع
+          وتخصيص المحتوى والإعلانات.
+        </p>
+        <p>
+          يمكن للمستخدم رفض الكوكيز أو حذفها من إعدادات المتصفح، لكن ذلك قد يؤثر
+          على بعض وظائف الموقع.
+        </p>
+        <p>
+          باستخدامك للموقع، فإنك توافق على استخدام الكوكيز وفقًا لهذه السياسة.
+        </p>
+      </section>
+    </main>
+
+    <footer>© 2026 جميع الحقوق محفوظة</footer>
+
+    <!-- بانر الكوكيز -->
+    <div id="cookie-banner">
+      يستخدم هذا الموقع ملفات الكوكيز لتحسين تجربتك وتقديم الإعلانات المتوافقة
+      مع سياسات Google.
+      <button onclick="acceptCookies()">أوافق</button>
+      <a href="#cookies" style="color: lightblue">اقرأ سياسة الكوكيز</a>
+    </div>
+  </body>
+</html>
